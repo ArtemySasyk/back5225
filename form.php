@@ -104,7 +104,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
       // предварительно санитизовав.
       $user = 'u41612';
       $pass = '1483808';
-      $db = new PDO('mysql:host=localhost;dbname=u20965', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+      $db = new PDO('mysql:host=localhost;dbname=u41612', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
       $stmt = $db->prepare("SELECT * FROM user WHERE user_id = ?");
       $stmt->execute([$_SESSION['uid']]);
       $row = $stmt ->fetch(PDO::FETCH_ASSOC);
