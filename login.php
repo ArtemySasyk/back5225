@@ -61,8 +61,8 @@ else {
 
   // TODO: Проверть есть ли такой логин и пароль в базе данных.
   // Выдать сообщение об ошибках.
-  $user = 'u41502';
-  $pass = '1202956';
+  $user = 'u41612';
+  $pass = '1483808';
   $db = new PDO('mysql:host=localhost;dbname=u41502', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
   $login_id = $_POST['login'];
   $pass = md5($_POST['pass']);
